@@ -42,7 +42,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(
-    "🌍  Choose your language:",
+    "🌍 Choose your language:",
         reply_markup=reply_markup,
     )
 
