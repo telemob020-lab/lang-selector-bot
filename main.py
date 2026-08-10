@@ -138,7 +138,7 @@ async def start(
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(
-        "🌍 اختر لغتك / Choose your language:",
+        "🌍 Choose your language:",
         reply_markup=reply_markup,
     )
 
