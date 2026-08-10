@@ -158,7 +158,6 @@ Bu bot, resmi web sitesine ve bölgenizde mevcut olan bilgilere erişim sağlar.
         "url": "https://example.com/fa",
     },
 }
-}
 
 # ==========================================
 # /start
