@@ -1,4 +1,3 @@
-```python
 import os
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -233,4 +232,4 @@ if __name__ == "__main__":
 
 ```text
 python-telegram-bot==22.5
-```
+
