@@ -24,58 +24,138 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 LANGUAGES = {
     "lang_ar": {
         "name": "العربية 🇪🇬",
-        "message": "🔗 هذا هو الرابط الرسمي للموقع باللغة العربية:",
+        "message": """**مرحبًا بك في البوت الرسمي! 🌍**
+
+هذا البوت يوفر لك الوصول إلى الموقع الرسمي والمعلومات المتاحة لمنطقتك.
+
+متاح على مدار الساعة:
+
+• روابط الموقع الرسمية لمنطقتك
+• أدلة ومعلومات مفيدة
+• آخر التحديثات والمعلومات العامة
+
+**الروابط الرسمية:**""",
         "button": "فتح الموقع 🇪🇬",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/ar",
     },
 
     "lang_en": {
         "name": "English 🇬🇧",
-        "message": "🔗 Here is the official website in English:",
+        "message": """**Welcome to the official bot! 🌍**
+
+This bot provides access to the official website and information available for your region.
+
+Available 24/7:
+
+• Official website links for your region
+• Useful guides and information
+• Latest updates and general information
+
+**Official resources:**""",
         "button": "Open Website 🇬🇧",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/en",
     },
 
     "lang_fr": {
         "name": "Français 🇫🇷",
-        "message": "🔗 Voici le site officiel en français :",
+        "message": """**Bienvenue sur le bot officiel ! 🌍**
+
+Ce bot vous permet d'accéder au site officiel et aux informations disponibles dans votre région.
+
+Disponible 24h/24 et 7j/7 :
+
+• Liens officiels pour votre région
+• Guides et informations utiles
+• Dernières mises à jour et informations générales
+
+**Ressources officielles :**""",
         "button": "Ouvrir le site 🇫🇷",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/fr",
     },
 
     "lang_de": {
         "name": "Deutsch 🇩🇪",
-        "message": "🔗 Hier ist die offizielle Website auf Deutsch:",
+        "message": """**Willkommen beim offiziellen Bot! 🌍**
+
+Dieser Bot bietet Ihnen Zugriff auf die offizielle Website und Informationen für Ihre Region.
+
+Rund um die Uhr verfügbar:
+
+• Offizielle Links für Ihre Region
+• Nützliche Anleitungen und Informationen
+• Aktuelle Updates und allgemeine Informationen
+
+**Offizielle Ressourcen:**""",
         "button": "Website öffnen 🇩🇪",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/de",
     },
 
     "lang_pt": {
         "name": "Português 🇵🇹",
-        "message": "🔗 Aqui está o site oficial em português:",
+        "message": """**Bem-vindo ao bot oficial! 🌍**
+
+Este bot fornece acesso ao site oficial e às informações disponíveis para a sua região.
+
+Disponível 24 horas por dia:
+
+• Links oficiais para a sua região
+• Guias e informações úteis
+• Atualizações e informações gerais
+
+**Recursos oficiais:**""",
         "button": "Abrir o site 🇵🇹",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/pt",
     },
 
     "lang_it": {
         "name": "Italiano 🇮🇹",
-        "message": "🔗 Ecco il sito ufficiale in italiano:",
+        "message": """**Benvenuto nel bot ufficiale! 🌍**
+
+Questo bot offre accesso al sito ufficiale e alle informazioni disponibili nella tua regione.
+
+Disponibile 24 ore su 24:
+
+• Link ufficiali per la tua regione
+• Guide e informazioni utili
+• Aggiornamenti e informazioni generali
+
+**Risorse ufficiali:**""",
         "button": "Apri il sito 🇮🇹",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/it",
     },
 
     "lang_tr": {
         "name": "Türkçe 🇹🇷",
-        "message": "🔗 Türkçe resmi web sitesi:",
+        "message": """**Resmi bota hoş geldiniz! 🌍**
+
+Bu bot, resmi web sitesine ve bölgenizde mevcut olan bilgilere erişim sağlar.
+
+7/24 kullanılabilir:
+
+• Bölgeniz için resmi bağlantılar
+• Yararlı rehberler ve bilgiler
+• Güncel ve genel bilgiler
+
+**Resmi kaynaklar:**""",
         "button": "Web sitesini aç 🇹🇷",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/tr",
     },
 
     "lang_fa": {
         "name": "فارسی 🇮🇷",
-        "message": "🔗 این لینک رسمی وب‌سایت به زبان فارسی است:",
+        "message": """**به ربات رسمی خوش آمدید! 🌍**
+
+این ربات دسترسی به وب‌سایت رسمی و اطلاعات موجود برای منطقه شما را فراهم می‌کند.
+
+به صورت ۲۴ ساعته در دسترس است:
+
+• لینک‌های رسمی برای منطقه شما
+• راهنماها و اطلاعات مفید
+• آخرین به‌روزرسانی‌ها و اطلاعات عمومی
+
+**منابع رسمی:**""",
         "button": "باز کردن وب‌سایت 🇮🇷",
-        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
+        "url": "https://example.com/fa",
     },
 }
 
