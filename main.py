@@ -21,143 +21,209 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 # ==========================================
 # غيّر النصوص والروابط هنا حسب موقعك.
 
+```python
 LANGUAGES = {
+
     "lang_ar": {
         "name": "العربية 🇪🇬",
-        "message": """**مرحبًا بك في البوت الرسمي! 🌍**
+        "message": """**مرحبًا بك في بوت المعلومات الرسمي لـ 1XBET! 🌍**
 
-هذا البوت يوفر لك الوصول إلى الموقع الرسمي والمعلومات المتاحة لمنطقتك.
+1XBET هي منصة دولية للمراهنات والألعاب عبر الإنترنت، وتوفر الوصول إلى مجموعة واسعة من الأسواق الرياضية والفعاليات المباشرة وغيرها من الخدمات الترفيهية عبر منصاتها الرقمية.
 
-متاح على مدار الساعة:
+توفر المنصة أسواقًا رياضية متنوعة تشمل العديد من الرياضات والمسابقات، مع اختلاف الخدمات ومدى توفرها حسب بلد المستخدم واللوائح المحلية المعمول بها.
 
-• روابط الموقع الرسمية لمنطقتك
-• أدلة ومعلومات مفيدة
-• آخر التحديثات والمعلومات العامة
+تم تصميم هذا البوت لتوفير وصول سهل إلى موارد 1XBET الرسمية والمعلومات الخاصة بمنطقتك بلغتك المفضلة.
 
-**الروابط الرسمية:**""",
+**متاح على مدار الساعة عبر هذا البوت:**
+
+• روابط الوصول الرسمية إلى 1XBET لمنطقتك
+• معلومات حول الخدمات والميزات المتاحة
+• أدلة ومعلومات عامة مفيدة
+• التحديثات والإعلانات
+• معلومات وموارد خاصة بكل منطقة
+• الوصول إلى القنوات والمواقع الرسمية لـ 1XBET
+
+**موارد 1XBET الرسمية:**""",
         "button": "فتح الموقع 🇪🇬",
         "url": "https://example.com/ar",
     },
 
+
     "lang_en": {
         "name": "English 🇬🇧",
-        "message": """**Welcome to the official bot! 🌍**
+        "message": """**Welcome to the official 1XBET information bot! 🌍**
 
-This bot provides access to the official website and information available for your region.
+1XBET is an international online betting and gaming platform offering access to a wide range of sports markets, live events, and other entertainment products through its digital services.
 
-Available 24/7:
+The platform provides sports betting markets across numerous sports and competitions, with available services varying depending on the user's country and applicable local regulations.
 
-• Official website links for your region
-• Useful guides and information
-• Latest updates and general information
+This bot is designed to provide convenient access to official 1XBET resources and region-specific information in your preferred language.
 
-**Official resources:**""",
+**Available 24/7 through this bot:**
+
+• Official 1XBET access links for your region
+• Information about available services and features
+• Useful guides and general platform information
+• Updates and announcements
+• Region-specific information and resources
+• Access to official 1XBET channels and websites
+
+**Official 1XBET resources:**""",
         "button": "Open Website 🇬🇧",
         "url": "https://example.com/en",
     },
 
+
     "lang_fr": {
         "name": "Français 🇫🇷",
-        "message": """**Bienvenue sur le bot officiel ! 🌍**
+        "message": """**Bienvenue sur le bot d'information officiel de 1XBET ! 🌍**
 
-Ce bot vous permet d'accéder au site officiel et aux informations disponibles dans votre région.
+1XBET est une plateforme internationale de paris et de jeux en ligne proposant un large choix de marchés sportifs, d'événements en direct et d'autres services de divertissement via ses plateformes numériques.
 
-Disponible 24h/24 et 7j/7 :
+La plateforme propose des marchés sportifs couvrant de nombreux sports et compétitions. Les services disponibles peuvent varier selon le pays de l'utilisateur et la réglementation locale applicable.
 
-• Liens officiels pour votre région
-• Guides et informations utiles
-• Dernières mises à jour et informations générales
+Ce bot a été conçu pour faciliter l'accès aux ressources officielles de 1XBET ainsi qu'aux informations spécifiques à votre région dans votre langue préférée.
 
-**Ressources officielles :**""",
+**Disponible 24h/24 et 7j/7 via ce bot :**
+
+• Liens officiels 1XBET disponibles dans votre région
+• Informations sur les services et fonctionnalités disponibles
+• Guides utiles et informations générales
+• Actualités et annonces
+• Informations et ressources spécifiques à chaque région
+• Accès aux sites et canaux officiels de 1XBET
+
+**Ressources officielles de 1XBET :**""",
         "button": "Ouvrir le site 🇫🇷",
         "url": "https://example.com/fr",
     },
 
+
     "lang_de": {
         "name": "Deutsch 🇩🇪",
-        "message": """**Willkommen beim offiziellen Bot! 🌍**
+        "message": """**Willkommen beim offiziellen 1XBET-Informationsbot! 🌍**
 
-Dieser Bot bietet Ihnen Zugriff auf die offizielle Website und Informationen für Ihre Region.
+1XBET ist eine internationale Online-Plattform für Sportwetten und Gaming. Über ihre digitalen Dienste bietet sie Zugang zu zahlreichen Sportmärkten, Live-Events und weiteren Unterhaltungsangeboten.
 
-Rund um die Uhr verfügbar:
+Die Plattform bietet Sportwettenmärkte für zahlreiche Sportarten und Wettbewerbe. Die verfügbaren Dienste können je nach Land des Nutzers und den geltenden lokalen Vorschriften unterschiedlich sein.
 
-• Offizielle Links für Ihre Region
-• Nützliche Anleitungen und Informationen
-• Aktuelle Updates und allgemeine Informationen
+Dieser Bot wurde entwickelt, um einen einfachen Zugang zu offiziellen 1XBET-Ressourcen und regionalen Informationen in Ihrer bevorzugten Sprache zu ermöglichen.
 
-**Offizielle Ressourcen:**""",
+**Rund um die Uhr über diesen Bot verfügbar:**
+
+• Offizielle 1XBET-Zugangslinks für Ihre Region
+• Informationen zu verfügbaren Diensten und Funktionen
+• Nützliche Anleitungen und allgemeine Informationen
+• Aktualisierungen und Ankündigungen
+• Regionale Informationen und Ressourcen
+• Zugang zu offiziellen 1XBET-Websites und -Kanälen
+
+**Offizielle 1XBET-Ressourcen:**""",
         "button": "Website öffnen 🇩🇪",
         "url": "https://example.com/de",
     },
 
+
     "lang_pt": {
         "name": "Português 🇵🇹",
-        "message": """**Bem-vindo ao bot oficial! 🌍**
+        "message": """**Bem-vindo ao bot oficial de informações da 1XBET! 🌍**
 
-Este bot fornece acesso ao site oficial e às informações disponíveis para a sua região.
+A 1XBET é uma plataforma internacional de apostas e jogos online que oferece acesso a uma ampla variedade de mercados esportivos, eventos ao vivo e outros serviços de entretenimento através das suas plataformas digitais.
 
-Disponível 24 horas por dia:
+A plataforma disponibiliza mercados esportivos em diversas modalidades e competições. Os serviços disponíveis podem variar de acordo com o país do utilizador e a regulamentação local aplicável.
 
-• Links oficiais para a sua região
-• Guias e informações úteis
-• Atualizações e informações gerais
+Este bot foi criado para facilitar o acesso aos recursos oficiais da 1XBET e às informações específicas da sua região no idioma da sua preferência.
 
-**Recursos oficiais:**""",
+**Disponível 24 horas por dia através deste bot:**
+
+• Links oficiais da 1XBET para a sua região
+• Informações sobre serviços e funcionalidades disponíveis
+• Guias úteis e informações gerais
+• Atualizações e anúncios
+• Informações e recursos específicos de cada região
+• Acesso aos sites e canais oficiais da 1XBET
+
+**Recursos oficiais da 1XBET:**""",
         "button": "Abrir o site 🇵🇹",
         "url": "https://example.com/pt",
     },
 
+
     "lang_it": {
         "name": "Italiano 🇮🇹",
-        "message": """**Benvenuto nel bot ufficiale! 🌍**
+        "message": """**Benvenuto nel bot informativo ufficiale di 1XBET! 🌍**
 
-Questo bot offre accesso al sito ufficiale e alle informazioni disponibili nella tua regione.
+1XBET è una piattaforma internazionale di scommesse e giochi online che offre accesso a un'ampia varietà di mercati sportivi, eventi dal vivo e altri servizi di intrattenimento attraverso le sue piattaforme digitali.
 
-Disponibile 24 ore su 24:
+La piattaforma offre mercati sportivi relativi a numerosi sport e competizioni. I servizi disponibili possono variare in base al Paese dell'utente e alle normative locali applicabili.
 
-• Link ufficiali per la tua regione
-• Guide e informazioni utili
-• Aggiornamenti e informazioni generali
+Questo bot è stato progettato per facilitare l'accesso alle risorse ufficiali di 1XBET e alle informazioni specifiche della propria regione nella lingua preferita.
 
-**Risorse ufficiali:**""",
+**Disponibile 24 ore su 24 tramite questo bot:**
+
+• Link ufficiali 1XBET disponibili nella tua regione
+• Informazioni sui servizi e sulle funzionalità disponibili
+• Guide utili e informazioni generali
+• Aggiornamenti e comunicazioni
+• Informazioni e risorse specifiche per regione
+• Accesso ai siti e ai canali ufficiali di 1XBET
+
+**Risorse ufficiali di 1XBET:**""",
         "button": "Apri il sito 🇮🇹",
         "url": "https://example.com/it",
     },
 
+
     "lang_tr": {
         "name": "Türkçe 🇹🇷",
-        "message": """**Resmi bota hoş geldiniz! 🌍**
+        "message": """**Resmi 1XBET bilgi botuna hoş geldiniz! 🌍**
 
-Bu bot, resmi web sitesine ve bölgenizde mevcut olan bilgilere erişim sağlar.
+1XBET, dijital hizmetleri üzerinden çok çeşitli spor bahisleri, canlı etkinlikler ve diğer eğlence hizmetlerine erişim sunan uluslararası bir çevrim içi bahis ve oyun platformudur.
 
-7/24 kullanılabilir:
+Platform, birçok spor dalı ve müsabaka için çeşitli spor bahis piyasaları sunmaktadır. Kullanılabilir hizmetler, kullanıcının bulunduğu ülkeye ve geçerli yerel düzenlemelere göre değişiklik gösterebilir.
 
-• Bölgeniz için resmi bağlantılar
-• Yararlı rehberler ve bilgiler
-• Güncel ve genel bilgiler
+Bu bot, resmi 1XBET kaynaklarına ve bölgenize özel bilgilere tercih ettiğiniz dilde kolay erişim sağlamak amacıyla tasarlanmıştır.
 
-**Resmi kaynaklar:**""",
+**Bu bot üzerinden 7/24 erişilebilir:**
+
+• Bölgeniz için resmi 1XBET erişim bağlantıları
+• Mevcut hizmetler ve özellikler hakkında bilgiler
+• Yararlı rehberler ve genel platform bilgileri
+• Güncellemeler ve duyurular
+• Bölgeye özel bilgiler ve kaynaklar
+• Resmi 1XBET web sitelerine ve kanallarına erişim
+
+**Resmi 1XBET kaynakları:**""",
         "button": "Web sitesini aç 🇹🇷",
         "url": "https://example.com/tr",
     },
 
+
     "lang_fa": {
         "name": "فارسی 🇮🇷",
-        "message": """**به ربات رسمی خوش آمدید! 🌍**
+        "message": """**به ربات اطلاعات رسمی 1XBET خوش آمدید! 🌍**
 
-این ربات دسترسی به وب‌سایت رسمی و اطلاعات موجود برای منطقه شما را فراهم می‌کند.
+1XBET یک پلتفرم بین‌المللی شرط‌بندی و بازی آنلاین است که از طریق خدمات دیجیتال خود دسترسی به طیف گسترده‌ای از بازارهای ورزشی، رویدادهای زنده و سایر خدمات سرگرمی را ارائه می‌دهد.
 
-به صورت ۲۴ ساعته در دسترس است:
+این پلتفرم بازارهای ورزشی مختلفی را برای ورزش‌ها و مسابقات متعدد ارائه می‌کند. خدمات قابل دسترس ممکن است بسته به کشور کاربر و مقررات محلی مربوطه متفاوت باشد.
 
-• لینک‌های رسمی برای منطقه شما
-• راهنماها و اطلاعات مفید
-• آخرین به‌روزرسانی‌ها و اطلاعات عمومی
+این ربات برای فراهم کردن دسترسی آسان به منابع رسمی 1XBET و اطلاعات مربوط به منطقه شما به زبان موردنظر شما طراحی شده است.
 
-**منابع رسمی:**""",
+**به صورت ۲۴ ساعته از طریق این ربات در دسترس است:**
+
+• لینک‌های رسمی دسترسی به 1XBET برای منطقه شما
+• اطلاعات مربوط به خدمات و امکانات موجود
+• راهنماها و اطلاعات عمومی مفید
+• به‌روزرسانی‌ها و اطلاعیه‌ها
+• اطلاعات و منابع ویژه هر منطقه
+• دسترسی به وب‌سایت‌ها و کانال‌های رسمی 1XBET
+
+**منابع رسمی 1XBET:**""",
         "button": "باز کردن وب‌سایت 🇮🇷",
         "url": "https://example.com/fa",
     },
 }
+```
 
 # ==========================================
 # /start
