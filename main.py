@@ -26,56 +26,56 @@ LANGUAGES = {
         "name": "العربية 🇪🇬",
         "message": "🔗 هذا هو الرابط الرسمي للموقع باللغة العربية:",
         "button": "فتح الموقع 🇪🇬",
-        "url": "https://example.com/ar",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_en": {
         "name": "English 🇬🇧",
         "message": "🔗 Here is the official website in English:",
         "button": "Open Website 🇬🇧",
-        "url": "https://example.com/en",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_fr": {
         "name": "Français 🇫🇷",
         "message": "🔗 Voici le site officiel en français :",
         "button": "Ouvrir le site 🇫🇷",
-        "url": "https://example.com/fr",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_de": {
         "name": "Deutsch 🇩🇪",
         "message": "🔗 Hier ist die offizielle Website auf Deutsch:",
         "button": "Website öffnen 🇩🇪",
-        "url": "https://example.com/de",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_pt": {
         "name": "Português 🇵🇹",
         "message": "🔗 Aqui está o site oficial em português:",
         "button": "Abrir o site 🇵🇹",
-        "url": "https://example.com/pt",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_it": {
         "name": "Italiano 🇮🇹",
         "message": "🔗 Ecco il sito ufficiale in italiano:",
         "button": "Apri il sito 🇮🇹",
-        "url": "https://example.com/it",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_tr": {
         "name": "Türkçe 🇹🇷",
         "message": "🔗 Türkçe resmi web sitesi:",
         "button": "Web sitesini aç 🇹🇷",
-        "url": "https://example.com/tr",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 
     "lang_fa": {
         "name": "فارسی 🇮🇷",
         "message": "🔗 این لینک رسمی وب‌سایت به زبان فارسی است:",
         "button": "باز کردن وب‌سایت 🇮🇷",
-        "url": "https://example.com/fa",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_TB&site=5094277&ad=1599",
     },
 }
 
