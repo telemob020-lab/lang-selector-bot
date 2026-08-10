@@ -306,5 +306,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-requirements.txt
-python-telegram-bot==22.5
+
