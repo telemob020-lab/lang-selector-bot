@@ -21,7 +21,6 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 # ==========================================
 # غيّر النصوص والروابط هنا حسب موقعك.
 
-```python
 LANGUAGES = {
 
     "lang_ar": {
@@ -223,7 +222,6 @@ Bu bot, resmi 1XBET kaynaklarına ve bölgenize özel bilgilere tercih ettiğini
         "url": "https://example.com/fa",
     },
 }
-```
 
 # ==========================================
 # /start
