@@ -1,3 +1,6 @@
+```python
+import os
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import (
     Application,
@@ -6,98 +9,211 @@ from telegram.ext import (
     ContextTypes,
 )
 
-# =========================
+
+# ==========================================
 # Bot Token
-# =========================
-# لا تضع الـ Token الحقيقي هنا عند رفع المشروع.
-# سنضعه لاحقًا في Railway كـ Environment Variable.
-import os
+# ==========================================
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
-# =========================
+# ==========================================
+# Language Data
+# ==========================================
+# غيّر النصوص والروابط هنا حسب موقعك.
+
+LANGUAGES = {
+    "lang_ar": {
+        "name": "العربية 🇪🇬",
+        "message": "🔗 هذا هو الرابط الرسمي للموقع باللغة العربية:",
+        "button": "فتح الموقع 🇪🇬",
+        "url": "https://example.com/ar",
+    },
+
+    "lang_en": {
+        "name": "English 🇬🇧",
+        "message": "🔗 Here is the official website in English:",
+        "button": "Open Website 🇬🇧",
+        "url": "https://example.com/en",
+    },
+
+    "lang_fr": {
+        "name": "Français 🇫🇷",
+        "message": "🔗 Voici le site officiel en français :",
+        "button": "Ouvrir le site 🇫🇷",
+        "url": "https://example.com/fr",
+    },
+
+    "lang_de": {
+        "name": "Deutsch 🇩🇪",
+        "message": "🔗 Hier ist die offizielle Website auf Deutsch:",
+        "button": "Website öffnen 🇩🇪",
+        "url": "https://example.com/de",
+    },
+
+    "lang_pt": {
+        "name": "Português 🇵🇹",
+        "message": "🔗 Aqui está o site oficial em português:",
+        "button": "Abrir o site 🇵🇹",
+        "url": "https://example.com/pt",
+    },
+
+    "lang_it": {
+        "name": "Italiano 🇮🇹",
+        "message": "🔗 Ecco il sito ufficiale in italiano:",
+        "button": "Apri il sito 🇮🇹",
+        "url": "https://example.com/it",
+    },
+
+    "lang_tr": {
+        "name": "Türkçe 🇹🇷",
+        "message": "🔗 Türkçe resmi web sitesi:",
+        "button": "Web sitesini aç 🇹🇷",
+        "url": "https://example.com/tr",
+    },
+
+    "lang_fa": {
+        "name": "فارسی 🇮🇷",
+        "message": "🔗 این لینک رسمی وب‌سایت به زبان فارسی است:",
+        "button": "باز کردن وب‌سایت 🇮🇷",
+        "url": "https://example.com/fa",
+    },
+}
+
+
+# ==========================================
 # /start
-# =========================
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+# ==========================================
+
+async def start(
+    update: Update,
+    context: ContextTypes.DEFAULT_TYPE
+):
+
     keyboard = [
         [
-            InlineKeyboardButton("🇪🇬 العربية", callback_data="lang_ar"),
-            InlineKeyboardButton("🇬🇧 English", callback_data="lang_en"),
+            InlineKeyboardButton(
+                "🇪🇬 العربية",
+                callback_data="lang_ar"
+            ),
+            InlineKeyboardButton(
+                "🇬🇧 English",
+                callback_data="lang_en"
+            ),
         ],
+
         [
-            InlineKeyboardButton("🇫🇷 Français", callback_data="lang_fr"),
-            InlineKeyboardButton("🇩🇪 Deutsch", callback_data="lang_de"),
+            InlineKeyboardButton(
+                "🇫🇷 Français",
+                callback_data="lang_fr"
+            ),
+            InlineKeyboardButton(
+                "🇩🇪 Deutsch",
+                callback_data="lang_de"
+            ),
         ],
+
         [
-            InlineKeyboardButton("🇵🇹 Português", callback_data="lang_pt"),
-            InlineKeyboardButton("🇮🇹 Italiano", callback_data="lang_it"),
+            InlineKeyboardButton(
+                "🇵🇹 Português",
+                callback_data="lang_pt"
+            ),
+            InlineKeyboardButton(
+                "🇮🇹 Italiano",
+                callback_data="lang_it"
+            ),
         ],
+
         [
-            InlineKeyboardButton("🇹🇷 Türkçe", callback_data="lang_tr"),
-            InlineKeyboardButton("🇮🇷 فارسی", callback_data="lang_fa"),
+            InlineKeyboardButton(
+                "🇹🇷 Türkçe",
+                callback_data="lang_tr"
+            ),
+            InlineKeyboardButton(
+                "🇮🇷 فارسی",
+                callback_data="lang_fa"
+            ),
         ],
     ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(
-    "🌍 Choose your language:",
+        "🌍 اختر لغتك / Choose your language:",
         reply_markup=reply_markup,
     )
 
 
-# =========================
-# Language Selection
-# =========================
+# ==========================================
+# Language Selected
+# ==========================================
+
 async def language_selected(
     update: Update,
     context: ContextTypes.DEFAULT_TYPE
 ):
+
     query = update.callback_query
 
-    # إبلاغ Telegram أن الزر تم الضغط عليه
+    # إيقاف حالة تحميل الزر
     await query.answer()
 
-    languages = {
-        "lang_ar": "العربية 🇪🇬",
-        "lang_en": "English 🇬🇧",
-        "lang_fr": "Français 🇫🇷",
-        "lang_de": "Deutsch 🇩🇪",
-        "lang_pt": "Português 🇵🇹",
-        "lang_it": "Italiano 🇮🇹",
-        "lang_tr": "Türkçe 🇹🇷",
-        "lang_fa": "فارسی 🇮🇷",
-    }
+    language_code = query.data
 
-    selected_language = languages.get(query.data)
+    # التأكد أن اللغة موجودة
+    language = LANGUAGES.get(language_code)
 
-    if not selected_language:
+    if not language:
         return
 
-    # نحفظ اختيار اللغة مؤقتًا في بيانات المستخدم
-    context.user_data["language"] = query.data
+    # حفظ اللغة للمستخدم
+    context.user_data["language"] = language_code
 
+    # إنشاء زر الموقع
+    website_button = InlineKeyboardMarkup([
+        [
+            InlineKeyboardButton(
+                language["button"],
+                url=language["url"]
+            )
+        ]
+    ])
+
+    # حذف رسالة اختيار اللغة وإظهار الرسالة الجديدة
     await query.edit_message_text(
-        f"✅ تم اختيار اللغة: {selected_language}\n\n"
-        "نكمل إعداد البوت..."
+        text=language["message"],
+        reply_markup=website_button
     )
 
 
-# =========================
+# ==========================================
 # Main
-# =========================
+# ==========================================
+
 def main():
+
     if not BOT_TOKEN:
         raise ValueError(
-            "BOT_TOKEN غير موجود. أضفه في Environment Variables."
+            "BOT_TOKEN غير موجود في Environment Variables."
         )
 
-    application = Application.builder().token(BOT_TOKEN).build()
+    application = (
+        Application.builder()
+        .token(BOT_TOKEN)
+        .build()
+    )
 
-    application.add_handler(CommandHandler("start", start))
+    # /start
     application.add_handler(
-        CallbackQueryHandler(language_selected, pattern=r"^lang_")
+        CommandHandler("start", start)
+    )
+
+    # اختيار اللغة
+    application.add_handler(
+        CallbackQueryHandler(
+            language_selected,
+            pattern=r"^lang_"
+        )
     )
 
     print("🤖 Bot is running...")
@@ -105,5 +221,16 @@ def main():
     application.run_polling()
 
 
+# ==========================================
+# Run Bot
+# ==========================================
+
 if __name__ == "__main__":
     main()
+```
+
+### `requirements.txt`
+
+```text
+python-telegram-bot==22.5
+```
