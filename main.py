@@ -44,7 +44,7 @@ LANGUAGES = {
 
 **موارد 1XBET الرسمية:**""",
         "button": "فتح الموقع 🇪🇬",
-        "url": "https://example.com/ar",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -69,7 +69,7 @@ This bot is designed to provide convenient access to official 1XBET resources an
 
 **Official 1XBET resources:**""",
         "button": "Open Website 🇬🇧",
-        "url": "https://example.com/en",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -94,7 +94,7 @@ Ce bot a été conçu pour faciliter l'accès aux ressources officielles de 1XBE
 
 **Ressources officielles de 1XBET :**""",
         "button": "Ouvrir le site 🇫🇷",
-        "url": "https://example.com/fr",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -119,7 +119,7 @@ Dieser Bot wurde entwickelt, um einen einfachen Zugang zu offiziellen 1XBET-Ress
 
 **Offizielle 1XBET-Ressourcen:**""",
         "button": "Website öffnen 🇩🇪",
-        "url": "https://example.com/de",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -144,7 +144,7 @@ Este bot foi criado para facilitar o acesso aos recursos oficiais da 1XBET e às
 
 **Recursos oficiais da 1XBET:**""",
         "button": "Abrir o site 🇵🇹",
-        "url": "https://example.com/pt",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -169,7 +169,7 @@ Questo bot è stato progettato per facilitare l'accesso alle risorse ufficiali d
 
 **Risorse ufficiali di 1XBET:**""",
         "button": "Apri il sito 🇮🇹",
-        "url": "https://example.com/it",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -194,7 +194,7 @@ Bu bot, resmi 1XBET kaynaklarına ve bölgenize özel bilgilere tercih ettiğini
 
 **Resmi 1XBET kaynakları:**""",
         "button": "Web sitesini aç 🇹🇷",
-        "url": "https://example.com/tr",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 
 
@@ -219,7 +219,7 @@ Bu bot, resmi 1XBET kaynaklarına ve bölgenize özel bilgilere tercih ettiğini
 
 **منابع رسمی 1XBET:**""",
         "button": "باز کردن وب‌سایت 🇮🇷",
-        "url": "https://example.com/fa",
+        "url": "https://reffpa.com/L?tag=d_5094277m_1599c_acint16&site=5094277&ad=1599&r=registration",
     },
 }
 
